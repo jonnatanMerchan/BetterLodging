@@ -1,0 +1,155 @@
+  .container {
+    display: flex;
+    height: 100%;
+    background: white;
+    margin: 80px auto;  
+  }
+  .crosselImage {
+    display: flex;
+    width: 50%;
+    height: 400px;
+  }
+  .thumbnails {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    width: 200px;
+    height: 200px;
+  }
+  .thumbnails  span {
+      flex: auto; 
+    }
+    .thumbnails a {
+      display: block;
+    }
+    
+    .thumbnails img {
+        width: 150px;
+        height: 70px;
+      object-fit: cover;
+      object-position: top;
+      margin: 5px;
+    }
+  
+  
+  
+  .slides {
+    overflow: hidden;
+    width: 420px;
+    height: 70%;}
+  
+    .slides span {
+      width: 300px;
+      position: absolute;
+      z-index: 1;
+    }
+    
+    .slides img {
+      height: 280px;
+      object-fit: cover;
+      object-position: top;
+    }
+  
+  
+  .slides span:target {
+    z-index: 3;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+  @keyframes hidden {
+    0% {
+      z-index: 2;
+    }
+    100% {
+      z-index: 2;
+    }
+  }
+  
+
+  
+.price {
+    width: 20%;
+    height: 350px;
+    border: 2px solid rgb(175, 170, 170);
+    padding: 10px;
+    margin: 10px;
+   
+}
+.header-price{
+    display: flex;
+    max-width: 100%;
+}
+.starts {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  .starts p {
+    text-align: center;
+  }
+  
+  .starts label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+.content-price{
+    display: flex;
+    max-width: 100%;
+    font-family: Verdana,Tahoma, sans-serif;
+    font-size: 14px;
+    color: #484848;
+}
+.price h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: rgb(134, 35, 51);
+    text-align: left;
+}
+.price span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #484848;
+    align-items: center;
+    display: flex;
+    margin: 0px 6px;
+    padding: 5px 0px 0 0;
+}
+
+.map {
+    width: 30%;
+    position: relative;
+    margin: 10px;
+}
+

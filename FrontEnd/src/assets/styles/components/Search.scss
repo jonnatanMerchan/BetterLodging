@@ -1,0 +1,68 @@
+.main {
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0px 0px 40px 40px;
+    padding: 80px 20px;
+}
+
+.main .isHome {
+    width: 40%;
+}
+.main .isHome {
+    width: 40%;
+}
+
+.main__title {
+    color: #ac4848;
+    font-size: 25px;
+}
+
+.inputDate {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid #ac4848;
+    border-radius: 10px;
+    color: #ac4848;
+    height: 30px;
+    margin-bottom: 20px;
+    outline: none;
+    width: 15%;
+    margin-right: 20px;
+}
+
+
+.inputSearch {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid #ac4848;
+    border-radius: 10px;
+    color: #ac4848;
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    height: 30px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 0px 10px;
+    margin-right: 20px;
+}
+
+::placeholder {
+    color: white;
+}
+
+.selectPerson {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid #ac4848;
+    border-radius: 10px;
+    color: #ac4848;
+    margin-right: 20px;
+    height: 30px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 0px 10px;
+}
+.selectPerson select{
+    background-color: rgba(255,255,255,0.1);
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    border: 2px solid #ac4848;
+    color: #ac4848;
+}
