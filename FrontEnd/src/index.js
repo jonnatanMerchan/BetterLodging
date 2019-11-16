@@ -6,6 +6,7 @@ import reducer from './reducers';
 import App from './routes/App';
 
 const initialState = {
+  room: [],
   'user': {},
   'playing': {},
   'search': [],
@@ -22,7 +23,6 @@ const initialState = {
       'Currency': 'Euro',
       'image' : 'https://r-cf.bstatic.com/xdata/images/hotel/square200/165481968.webp?k=1b042e039985653cf49bec510b595e525f6f904ccb0ed2c5251c651c4b9f2edc&o',
       'Description': 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.'
-      
     },
     {
       'id': 2,
