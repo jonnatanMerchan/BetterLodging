@@ -13,3 +13,8 @@ export const searchVideo = (payload) => ({
   payload,
 });
 
+export const loginRequest = payLoad => ({
+  type:'LOGIN_REQUEST',
+  payLoad,
+});
+

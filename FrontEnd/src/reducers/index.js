@@ -13,7 +13,12 @@ const reducer = (state, action) => {
         search: state.content.filter((items) => items.title.toLowerCase().includes(action.payload.toLowerCase())) ||
           [],
       };
-
+    case 'LOGIN_REQUEST':
+      return {
+        ...state,
+        user:action.payload,
+        autenticado:true,
+      }
     default:
       return state;
   }

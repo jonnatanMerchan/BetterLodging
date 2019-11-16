@@ -2,7 +2,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { logoutRequest } from '../actions';
+import { logoutRequest } from '../actions/index';
 import '../assets/styles/components/Header.scss';
 import Logo from '../assets/images/logo-header.png';
 import ProfilePic from '../assets/images/user-icon.png';
@@ -20,12 +20,15 @@ const Header = (props) => {
   return (
       <header id="main-header">
           <a id="logo-header" href="#">
-            <span class="site-name">FranciscoAMK</span>
-            <span class="site-desc">Diseño web / WordPress / Tutoriales</span>
+            <span class="site-name">BetterLodging</span>
+            <span class="site-desc">Alojamiento / Alquiler / Los mejores precios </span>
           </a>
           <nav>
             <ul>
-              <li><a href="#">Inicio</a></li>
+              <li><Link to="/login">
+                    Inicio
+                  </Link>
+              </li>
               <li><a href="#">Acerca de</a></li>
               <li><a href="#">Contacto</a></li>
             </ul>
