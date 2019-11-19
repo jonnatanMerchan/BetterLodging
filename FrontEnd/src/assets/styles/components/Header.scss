@@ -1,6 +1,8 @@
+@import '../Vars.scss';
+@import '../Media.scss';
 
 #main-header {
-	background: #ac4848;
+	background: $back-ground-color;
 	color: white;
 	height: 80px;
 	width: 100%;
@@ -9,7 +11,7 @@
 	position: fixed;
 }	
 	#main-header a {
-		color: white;
+		color: $letter-color;
 	}
 
 #logo-header {
@@ -25,13 +27,14 @@
 		display: block;
 		font-weight: 700;
 		font-size: 1.2em;
+		color: $letter-color;
 	}
 	
 	#logo-header .site-desc {
 		display: block;
 		font-weight: 300;
 		font-size: 0.8em;
-		color: #999;
+		color: $letter-color;
 	}
 	
 nav {

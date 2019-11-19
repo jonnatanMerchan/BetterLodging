@@ -19,18 +19,16 @@ const Header = (props) => {
 
   return (
       <header id="main-header">
-          <a id="logo-header" href="#">
+          <a id="logo-header" href="/">
             <span class="site-name">BetterLodging</span>
             <span class="site-desc">Alojamiento / Alquiler / Los mejores precios </span>
           </a>
           <nav>
             <ul>
               <li><Link to="/login">
-                    Inicio
+                    Iniciar Sessión
                   </Link>
               </li>
-              <li><a href="#">Acerca de</a></li>
-              <li><a href="#">Contacto</a></li>
             </ul>
           </nav>
         </header>
