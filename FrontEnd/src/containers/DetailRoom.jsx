@@ -55,10 +55,23 @@ const DetailRoom = (props) => {
         </p>
       </div>
     </div>
-    <div className="content-price">
-      <p>total</p>
-      <h2>${sumTotal()}</h2>
+    
+    <h1>Reserva...</h1>	
+    <div className = "inputFechaReserva">
+        <input type="date" name="Desde"></input>
+        <span/>
+        <input type="date" name="Hasta"></input>
     </div>
+    
+    <div className="content-price">
+      <h1>Total</h1> 
+      <span><h2>$160000</h2></span>
+    </div>
+
+    <div className="content-button">
+        <button className="buttonReservar">Reservar</button>
+    </div>
+    
   </div>
   <div className="map">
     <MapContainer />
