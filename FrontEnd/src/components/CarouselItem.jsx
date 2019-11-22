@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import '../assets/styles/components/CarouselItem.scss';
+import {detailRoom} from '../actions/index';
 
 const CarouselItem = (props) => {
   const { id, Full_Name, image, Country, Street_Address, Phone, City, Money, Currency, Description, isListBand } = props;
+  
   const handleAddToCart = (product) => {
-    props.addToCart(product);
+    props.detailRoom(product);
   }
   return (
     <Link to="/detailRoom">
@@ -27,16 +29,15 @@ CarouselItem.propTypes = {
   Full_Name: PropTypes.string,
   Country: PropTypes.string,
   Street_Address: PropTypes.string,
-  Phone: PropTypes.number,
+  Phone: PropTypes.string,
   City: PropTypes.string,
-  Money: PropTypes.number,
+  Money: PropTypes.string,
   Currency: PropTypes.string,
   Description: PropTypes.string,
 };
 
-//const mapDispatchToProps = {
-//  setFavorite,
-//  unsetFavorite,
-//};
+const mapDispachToProps = {
+  detailRoom,
+};
 
-export default connect(null, null)(CarouselItem);
+export default connect(null, mapDispachToProps)(CarouselItem);

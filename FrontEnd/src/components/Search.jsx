@@ -32,10 +32,10 @@ const Search = (props) => {
                 placeholder="Buscar..." onChange={handleInput} />
           <input type="date" className ="inputDate" />
           <input type="date" className ="inputDate" />
-          <select className ="selectPerson" name="transporte">
+          <select  className ="selectPerson" name="transporte">
             <option>1 </option>
             <option>2 </option>
-            <option selected>0 -Cantidad personas 0 - habitaciones</option>
+            <option selected="selected">0 -Cantidad personas 0 - habitaciones</option>
         </select>
         {hasSearch ? (
           <Categories title='Resultados' className={searchStyle}>

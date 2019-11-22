@@ -13,8 +13,14 @@ export const searchVideo = (payload) => ({
   payload,
 });
 
-export const loginRequest = payLoad => ({
-  type:'LOGIN_REQUEST',
+export const detailRoom = (payLoad) => ({
+  type: 'DETAIL_ROOM',
+  payLoad,
+  });
+
+export const loginRequest = (payLoad) => (
+  {
+ type:'LOGIN_REQUEST',
   payLoad,
 });
 

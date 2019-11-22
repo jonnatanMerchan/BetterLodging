@@ -11,7 +11,9 @@ import gravatar from '../utils/gravatar';
 const Header = (props) => {
   const { user } = props;
 
-  const hasUser = Object.keys(user).length > 0;
+  const hasUser = Object.keys(user? user : '').length > 0;
+
+  console.log(`En header hasUser => ${hasUser}`);
 
   const handleLogout = () => {
     props.logoutRequest({});
@@ -20,8 +22,8 @@ const Header = (props) => {
   return (
       <header id="main-header">
           <a id="logo-header" href="/">
-            <span class="site-name">BetterLodging</span>
-            <span class="site-desc">Alojamiento / Alquiler / Los mejores precios </span>
+            <span className="site-name">BetterLodging</span>
+            <span className="site-desc">Alojamiento / Alquiler / Los mejores precios </span>
           </a>
           <nav>
             <ul>

@@ -9,8 +9,7 @@ import { Link } from 'react-router-dom';
 const Login = props => {
 
   const { user } = props;
-
-  const hasUser = Object.keys(user).length > 0;
+  const hasUser = Object.keys(user? user:'').length > 0;
 
   console.log('hasUser =>',hasUser);
 
@@ -31,11 +30,13 @@ const Login = props => {
             
           console.log(`Datos Ingresados ${event.target.email.value}`);
           console.log(`Datos Ingresados ${event.target.password.value}`);
-          console.log(`Datos Ingresados ${form}`);
+          console.log(`Datos Ingresados ${form.email}`);
+
+
 
             event.preventDefault();
             props.loginRequest(form);
-            props.history.push('/login');
+            props.history.push('/');
             
             
           }

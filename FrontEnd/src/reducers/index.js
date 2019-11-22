@@ -16,9 +16,13 @@ const reducer = (state, action) => {
     case 'LOGIN_REQUEST':
       return {
         ...state,
-        user:action.payload,
-        autenticado:true,
-      }
+        user:action.payLoad
+      };
+    case 'DETAIL_ROOM' :
+      return {
+        ...state,
+        producto: action.payLoad,
+      };
     default:
       return state;
   }
